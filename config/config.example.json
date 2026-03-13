@@ -1,0 +1,51 @@
+{
+  "app": {
+    "name": "Macao Announcement Monitor",
+    "version": "0.1.0",
+    "description": "澳門特別行政區公報 - 公開競投公告監控系統"
+  },
+  "monitor": {
+    "base_url": "https://www.bo.dsaj.gov.mo/cn/news/list/b/",
+    "category_id": 13,
+    "category_name": "公開競投 (服務提供/物品供應)",
+    "check_interval_minutes": 30,
+    "max_pages_to_crawl": 1
+  },
+  "storage": {
+    "type": "sqlite",
+    "database_path": "data/announcements.db",
+    "backup_enabled": true,
+    "backup_interval_days": 7
+  },
+  "notification": {
+    "enabled": true,
+    "methods": ["telegram", "log"],
+    "telegram": {
+      "enabled": false,
+      "bot_token": "${TELEGRAM_BOT_TOKEN}",
+      "chat_id": "${TELEGRAM_CHAT_ID}"
+    },
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.example.com",
+      "smtp_port": 587,
+      "username": "${EMAIL_USERNAME}",
+      "password": "${EMAIL_PASSWORD}",
+      "from_address": "monitor@example.com",
+      "to_addresses": ["user@example.com"]
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "logs/monitor.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  },
+  "request": {
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "retry_delay_seconds": 2,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  }
+}
