@@ -144,8 +144,8 @@
 
 ## 相關連結
 
-- [GitHub 倉庫](https://github.com/john-fb-agent/macao-announcement-monitor)
-- [問題追蹤](https://github.com/john-fb-agent/macao-announcement-monitor/issues)
+- [GitHub 倉庫](https://github.com/john-fb-agent/macao-tender-announce)
+- [問題追蹤](https://github.com/john-fb-agent/macao-tender-announce/issues)
 - [專案文件](./README.md)
 - [系統設計](./DESIGN.md)
 - [網站分析](./API.md)
