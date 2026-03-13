@@ -1,6 +1,6 @@
 # 🇲🇴 澳門公開競投公告監控系統
 
-**Macao Announcement Monitor**
+**Macao Tender Announce**
 
 自動監控澳門特別行政區公報 - 公開競投公告，即時通知新公告發布。
 
@@ -259,8 +259,8 @@ python tests/test_database.py
 ## 📞 聯絡
 
 - **作者**：john-fb-agent
-- **專案連結**：https://github.com/john-fb-agent/macao-announcement-monitor
-- **問題回報**：https://github.com/john-fb-agent/macao-announcement-monitor/issues
+- **專案連結**：https://github.com/john-fb-agent/macao-tender-announce
+- **問題回報**：https://github.com/john-fb-agent/macao-tender-announce/issues
 
 ---
 
